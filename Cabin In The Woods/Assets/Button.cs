@@ -14,6 +14,7 @@ public class Button : MonoBehaviour
         if(Input.GetKeyDown(key))
         {
             EventSystem.current.SetSelectedGameObject(this.gameObject);
+            
         }
     }
 }

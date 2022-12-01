@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class NewBehaviourScript1 : MonoBehaviour
 {
-        public GameObject optionsMenu;
+        public GameObject Menu;
+        public GameObject Help;
 
-    void Update()
+
+    void FixedUpdate()
     {
-        if (Input.GetMouseButtonDown(0))
-        { 
-            Debug.Log("Pressed left click.");
-        }
 
         if (Input.GetMouseButton(1))
         {
-            optionsMenu.gameObject.SetActive(!optionsMenu.gameObject.activeSelf);
-            Debug.Log("Pressed right click.");
+            Menu.gameObject.SetActive(!Menu.gameObject.activeSelf);
+         
         }
 
         if (Input.GetMouseButton(2))
         {
 
-            Debug.Log("Pressed middle click.");
+            Help.gameObject.SetActive(!Help.gameObject.activeSelf);
         }
     }
 }

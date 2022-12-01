@@ -68,7 +68,7 @@ public class Interaction : MonoBehaviour
                         interactable.Deactivate();                  //try deactivate the object instead
                     }
 
-                    if (debug == true)
+                      if (debug == true)
                     {
                         Debug.DrawRay(transform.position, transform.forward * reach, Color.green, 0.25f);       //draw debug ray
                     }
@@ -93,17 +93,17 @@ public class Interaction : MonoBehaviour
 /// <summary>
 /// This class is used to define objects that can be interacted with.
 /// </summary>
-public abstract class InteractableObject : MonoBehaviour
-{
-    /// <summary>
-    /// Should return true if the interaction was successful.
-    /// </summary>
-    /// <returns></returns>
-    public abstract bool Activate();
-    
-    /// <summary>
-    /// Should return true if the interaction was successful.
-    /// </summary>
-    /// <returns></returns>
-    public abstract bool Deactivate();
-}
+    public abstract class InteractableObject : MonoBehaviour
+    {
+        /// <summary>
+        /// Should return true if the interaction was successful.
+        /// </summary>
+        /// <returns></returns>
+        public abstract bool Activate();
+
+        /// <summary>
+        /// Should return true if the interaction was successful.
+        /// </summary>
+        /// <returns></returns>
+        public abstract bool Deactivate();
+    }
