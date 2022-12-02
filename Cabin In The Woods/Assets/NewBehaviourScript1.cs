@@ -11,16 +11,13 @@ public class NewBehaviourScript1 : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (Input.GetMouseButton(1))
-        {
+        if (Input.GetMouseButtonDown(1))
+        
             Menu.gameObject.SetActive(!Menu.gameObject.activeSelf);
-         
-        }
-
-        if (Input.GetMouseButton(2))
-        {
-
+        
+        if (Input.GetMouseButtonDown(2))
+     
             Help.gameObject.SetActive(!Help.gameObject.activeSelf);
-        }
+        
     }
 }
