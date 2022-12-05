@@ -8,11 +8,11 @@ using UnityEngine;
 public class NavigationWaypoint : InteractableObject
 {
     [Tooltip("This is the audio clip that will play when notes are opened/closed.")]
-    [SerializeField] private AudioClip interactClip;
+    [SerializeField] public AudioClip interactClip;
 
-    private ParticleSystem particles;
-    private Collider objectCollider;
-    private AudioSource audioSource;
+    public ParticleSystem particles;
+    public Collider objectCollider;
+    public AudioSource audioSource;
 
     //Awake is executed before the Start method
     private void Awake()

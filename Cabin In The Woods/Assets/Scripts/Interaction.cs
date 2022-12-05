@@ -73,6 +73,7 @@ public class Interaction : MonoBehaviour
                         Debug.DrawRay(transform.position, transform.forward * reach, Color.green, 0.25f);       //draw debug ray
                     }
                 }
+
             }
             else            //if hit object doesnt have interactable component
             {

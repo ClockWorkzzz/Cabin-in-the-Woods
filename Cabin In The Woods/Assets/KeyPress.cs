@@ -4,16 +4,23 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Button : MonoBehaviour 
+public class KeyPress : MonoBehaviour 
 {
-    public string key;
+    public string _key;
+    public Button _button;
 
+    void Awake()
+    {
+        _button = GetComponent<Button>();
+    }
 
     void Update()
     {
-        if(Input.GetKeyDown(key))
+        if (Input.GetKeyDown(_key))
         {
+
             EventSystem.current.SetSelectedGameObject(this.gameObject);
+
         }
     }
 }
